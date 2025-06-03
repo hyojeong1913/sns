@@ -284,3 +284,9 @@ gradle-app.setting
 
 **/front-end/node_modules/**
 **/front-end/static/**
+
+# .DS_Store
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
