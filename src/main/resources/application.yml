@@ -6,7 +6,7 @@ spring:
     password: root
 
   jpa:
-    show-sql: false # ? false?!
+    show-sql: false
     properties:
       hibernate:
         format_sql: true
@@ -23,3 +23,9 @@ logging:
     org.hibernate.SQL: DEBUG
     org.hibernate.orm.jdbc.bind: TRACE
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+jwt:
+  secret-key: fastcampus.sns-application.secret-key
+  token:
+    # 30? (24 * 60 * 60 * 30) * 1000 (ms)
+    expired-time-ms: 2592000000
